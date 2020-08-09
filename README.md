@@ -11,3 +11,7 @@ Start the docker image using below comment
 docker-compose up
 ```
 
+# Author
+
+Ajithlal K
+
