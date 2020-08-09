@@ -1,0 +1,21 @@
+version : '2'
+services:
+  spring-boot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8080"
+    networks:
+      - "spring-boot-network"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    networks:
+      - "spring-boot-network"
+
+networks:
+  spring-boot-network:
+    driver: bridge
