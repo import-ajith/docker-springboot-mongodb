@@ -1,4 +1,4 @@
-# docker-springboot-mongodb
+# Multicontainer docker implementation using spring boot and mongo DB
 This is a multi container docker implementation using spring boot and mongo db
 
 Build the docker image
